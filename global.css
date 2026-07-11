@@ -1,0 +1,221 @@
+/* ==========================================
+   1. IMPORTS
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
+/* ==========================================
+   2. CSS RESET
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ==========================================
+   3. ROOT VARIABLES
+========================================== */
+
+:root {
+
+    /* Colors */
+
+    --primary-color: #ffffff;
+    --secondary-color: #e4e3e3;
+    --hover-color: #efeaea;
+    --border-color: #dddcdc;
+    --text-color: #000000;
+
+
+    /* Layout */
+
+    --header-height: 56px;
+    --sidebar-width: 240px;
+    --sidebar-collapsed-width: 72px;
+
+
+    /* Border Radius */
+
+    --border-radius: 30px;
+    --circle-radius: 50%;
+
+
+    /* Typography */
+
+    --font-family: "Roboto", Arial, sans-serif;
+
+    --font-size-small: 12px;
+    --font-size-medium: 14px;
+    --font-size-large: 16px;
+    --font-size-big: 18px;
+
+
+    /* Icons */
+
+    --icon-size: 28px;
+
+
+    /* Animation */
+
+    --transition-speed: 0.2s;
+
+}
+
+
+/* ==========================================
+   4. GLOBAL ELEMENTS
+========================================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:var(--font-family);
+
+    color:var(--text-color);
+
+    background-color:var(--primary-color);
+
+    padding-top:var(--header-height);
+
+}
+
+main {
+    display: grid;
+    flex: 1;
+    margin-left: var(--sidebar-width);
+    padding: 2px 24px;
+    container-type: inline-size;
+    transition: margin-left .25s ease, width .25s ease;
+}
+
+aside.collapsed + main {
+    margin-left: var(--sidebar-collapsed-width);
+}
+
+/* ==========================================
+   5. TYPOGRAPHY
+========================================== */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+button{
+
+    font:inherit;
+
+}
+
+input{
+
+    font:inherit;
+
+}
+
+
+/* ==========================================
+   6. GLOBAL LAYOUT
+========================================== */
+
+.page-container{
+
+    display:flex;
+
+}
+
+main{
+
+    flex:1;
+
+}
+
+
+/* ==========================================
+   7. REUSABLE UTILITIES
+========================================== */
+
+.hidden{
+
+    display:none;
+
+}
+
+.visually-hidden{
+
+    position:absolute;
+
+    width:1px;
+
+    height:1px;
+
+    overflow:hidden;
+
+}
+
+
+/* ==========================================
+   8. GLOBAL STATES
+========================================== */
+
+button{
+
+    cursor:pointer;
+
+}
+
+button:focus,
+input:focus{
+
+    outline:none;
+
+}
+
+
+/* ==========================================
+   9. ANIMATIONS
+========================================== */
+
+.sidebar-link,
+.create-button,
+.notification-button,
+.profile-button,
+.voice-search-button {
+  transition:
+    background-color var(--transition-speed),
+    color var(--transition-speed);
+}
+
+
+/* ==========================================
+   10. RESPONSIVE
+========================================== */
+
+
+@media (max-width:768px){
+ main {
+    margin-left: 0px;
+ }
+}
+
+@media (max-width:400px){
+ main {
+    margin-left: 0px;
+ }
+}
+
+

@@ -1,0 +1,286 @@
+/* ==========================================
+   HEADER LAYOUT
+========================================== */
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: var(--header-height);
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  
+ 
+  padding: 0 16px;
+
+  background-color: var(--primary-color);
+  
+  z-index: 100;
+}
+
+/* ==========================================
+   HEADER SECTIONS
+========================================== */
+
+.header__left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  margin-left: 8px;
+}
+
+.header__center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 1;
+  
+  max-width: 600px;
+  min-width: 40px;
+
+
+  margin-right: 65px;
+  margin-left: 80px;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  
+  gap: 8px;
+}
+
+/* ==========================================
+   HEADER LOGO
+========================================== */
+
+.logo img {
+  height: 40px;
+  width: auto;
+
+  padding: 0 12px;
+ background-color: transparent;
+  border-radius: 14px;
+}
+
+/* ==========================================
+   HEADER SEARCH
+========================================== */
+
+.header__search-form {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+
+}
+
+.header__search-input {
+  flex: 1;
+
+  min-width: 0;
+
+  padding: 10px 16px;
+
+  border: 1px solid var(--border-color);
+  border-radius: 30px 0 0 30px;
+
+  background-color: var(--primary-color);
+}
+
+.header__search-button {
+  padding: 4px 12px;
+
+  border: 1px solid var(--border-color);
+  border-radius: 0 30px 30px 0;
+  border-left: none;
+  
+  background-color: var(--primary-color);
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.sidebar__toggle,
+.voice-search__button,
+.create-button,
+.notification__button,
+.profile-button {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  border: 1px solid var(--border-color);
+
+  background-color: var(--secondary-color);
+
+  transition: background-color 2s ease;
+}
+
+.sidebar__toggle {
+  background: none;
+  border: none;
+  padding: 6px;
+  border-radius: 50%;
+}
+
+
+.voice-search__button {
+  margin-left: 12px;
+
+  padding: 4px;
+  
+  border-radius: var(--circle-radius);
+  background-color: rgb(251, 248, 248);
+}
+
+.create-button {
+  padding: 4px 12px;
+  background-color: rgb(251, 248, 248);
+  border-radius: var(--border-radius);
+}
+
+.notification__button {
+  padding: 6px;
+  background-color: rgb(251, 248, 248);
+  border-radius: var(--border-radius);
+  border: none;
+}
+
+.header__search-container,
+.voice-search__container,
+.notification__container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+    
+}
+
+.notification__count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0px 3px;
+  font-family: 'roboto', arial;
+  font-weight: 600;
+  background-color: red;
+  color: var(--primary-color);
+  border-radius: 10px;
+}
+
+
+
+.profile-button {
+  margin-left: 16px;
+  
+  border-radius: var(--circle-radius);
+}
+
+.profile-button img {
+  height: 30px;
+  width: auto;
+  border-radius: 50%;
+}
+
+/* ==========================================
+   ICONS
+========================================== */
+
+.material-icons {
+  font-size: var(--icon-size);
+}
+
+.tool-tip {
+  position: absolute;
+  background-color: rgba(50, 47, 47, 0.7);
+  color: white;
+  bottom: -50px;
+  padding: 6px;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s ease;
+  white-space: nowrap;
+
+}
+
+/* ==========================================
+   TYPOGRAPHY
+========================================== */
+
+.create-button span {
+  margin-left: 4px;
+  font-size: var(--font-size-medium);
+  font-weight: bold;
+}
+
+/* ==========================================
+   STATES
+========================================== */
+
+.sidebar__toggle:hover,
+.create-button:hover,
+.notification__button:hover,
+.profile-button:hover,
+.voice-search__button:hover {
+  background-color: rgb(212, 203, 203);
+  transition: 0.1s ease;
+}
+
+.header__search-container:hover .tool-tip,
+.voice-search__container:hover .tool-tip,
+.notification__container:hover .tool-tip {
+
+    opacity: 1;
+}
+
+.header__search-input:focus {
+  outline: none;
+
+  border-color: #1976d2;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 650px) {
+  .header__center {
+    margin-left: 16px;
+    margin-left: 16px;
+    flex: 0;
+    transition: 0.1s ease-in;
+  }
+
+  .header__search-input {
+    display: none;
+  }
+
+  .header__search-button {
+    border-radius: 60px;
+    border: none;
+  }
+
+  .header__right {
+    gap: 3px;
+    margin-left: -20px;
+  }
+
+  .header__left {
+    margin-left: -10px;
+  }
+
+  .profile-button {
+    margin-left: 4px;
+  }
+}
