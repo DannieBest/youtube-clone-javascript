@@ -1,9 +1,5 @@
-[{
-    thumbnail: "",
-    avatar: "",
-    title: "",
-    author: "",
-    views: "",
-    uploaded: "",
-    duration: "",
-  },];
+import {videos} from '../data/videos.js';
+
+export function renderVideos (video) {
+  
+};
