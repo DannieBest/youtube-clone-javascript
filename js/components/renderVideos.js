@@ -2,10 +2,9 @@ import {videos} from '../data/videos.js';
 
 export function renderVideos (video) {
   const videoGrid = document.querySelector('.video-grid');
-  let videoRender = "";
-
-  videos.forEach((video) => {
-    videoRender += `
+  
+  const videoRender = videos.map((video) => {
+    return `
       <article class="video-card">
         <div class="video-card__thumbnail">
           <a href="#">
@@ -42,5 +41,5 @@ export function renderVideos (video) {
     `;
   });
 
-  videoGrid.innerHTML = videoRender;
+  videoGrid.innerHTML = videoRender.join("");
 };
