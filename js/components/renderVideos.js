@@ -1,6 +1,4 @@
-import {videos} from '../data/videos.js';
-
-export function renderVideos (video) {
+export function renderVideos (videos) {
   const videoGrid = document.querySelector('.video-grid');
   
   const videoRender = videos
@@ -8,17 +6,17 @@ export function renderVideos (video) {
     .join("");
 
   videoGrid.innerHTML = videoRender;
-};
+}
 
 function generateVideoCard(video) {
   return `
-    <article class="video-card">
+    <article class="video-card" data-video-id="${video.id}">
       <div class="video-card__thumbnail">
         <a href="#">
           <img
             loading="lazy"
             src="${video.thumbnail}"
-            alt="${video.title}"
+            alt="${video.title} thumbnail"
           />
         </a>
         <div class="video-card__time">${video.duration}</div>
@@ -29,7 +27,7 @@ function generateVideoCard(video) {
             <img
               loading="lazy"
               src="${video.avatar}"
-              alt="${video.author}"
+              alt="${video.author} avatar"
             />
           </a>
         </div>

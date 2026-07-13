@@ -1,10 +1,7 @@
-import './sidebar.js';
-import './videotag.js';
+import './components/sidebar.js';
+import './components/videotag.js';
+import './components/videoTagActive.js';
 import { videos } from './data/videos.js';
+import { renderVideos } from './components/renderVideos.js';
 
-
-videos.forEach((video) => { 
-  console.log(video.title);
-});
-
-renderVideos();
+renderVideos(videos);

@@ -83,7 +83,7 @@
   );
 }
 
-.video-tag__button.active{
+.video-tag__button--active {
   background:black;
   color:white;
 }
