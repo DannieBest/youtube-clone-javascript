@@ -7,3 +7,4 @@ videos.forEach((video) => {
   console.log(video.title);
 });
 
+renderVideos();
