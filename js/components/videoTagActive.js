@@ -1,4 +1,5 @@
 import { videos } from "../data/videos.js";
+import { videoTags } from "../data/videoTag.js";
 
 const videoTagContainer = document.querySelector(".video-tag__container");
 
@@ -18,6 +19,9 @@ videoTagContainer.addEventListener("click", (event) => {
 
   const category = event.target.dataset.category;
 
-  console.log(videos);
+  const filteredVideos = videos.filter((video) => {
+    return video.category === category;
+  });
+  console.log(filteredVideos)
 
 });
