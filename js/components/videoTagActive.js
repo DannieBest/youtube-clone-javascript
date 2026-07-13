@@ -1,3 +1,5 @@
+import { videos } from "../data/videos.js";
+
 const videoTagContainer = document.querySelector(".video-tag__container");
 
 videoTagContainer.addEventListener("click", (event) => {
@@ -16,6 +18,6 @@ videoTagContainer.addEventListener("click", (event) => {
 
   const category = event.target.dataset.category;
 
-  console.log(category);
+  console.log(videos);
 
 });
