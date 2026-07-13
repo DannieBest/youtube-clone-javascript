@@ -21,7 +21,7 @@ export const videoTags = [
   },
   {
     id: "50",
-    category: "Podcas",
+    category: "Podcast",
     active: false,
   },
   {

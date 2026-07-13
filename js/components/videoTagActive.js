@@ -14,4 +14,8 @@ videoTagContainer.addEventListener("click", (event) => {
 
   event.target.classList.add("video-tag__button--active");
 
+  const category = event.target.dataset.category;
+
+  console.log(category);
+
 });
