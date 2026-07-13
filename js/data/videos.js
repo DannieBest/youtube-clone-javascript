@@ -1,5 +1,6 @@
 export const videos = [
   {
+    id: 1,
     thumbnail: "src/assets/video-pics/thumbnail-1.webp",
     avatar: "src/assets/channel-pics/channel-1.jpeg",
     title: "Talking Tech and AI with Google CEO Sundar Pichai!",
@@ -9,6 +10,7 @@ export const videos = [
     duration: "14:20",
   },
   {
+    id: 2,
     thumbnail: "src/assets/video-pics/thumbnail-2.webp",
     avatar: "src/assets/channel-pics/channel-2.jpeg",
     title: "Try Not To Laugh Challenge #9",
@@ -18,6 +20,7 @@ export const videos = [
     duration: "8:22",
   },
   {
+    id: 3,
     thumbnail: "src/assets/video-pics/thumbnail-3.webp",
     avatar: "src/assets/channel-pics/channel-3.jpeg",
     title: "Crazy Tik Toks Taken Moments Before DISASTER",
@@ -27,6 +30,7 @@ export const videos = [
     duration: "9:13",
   },
   {
+    id: 4,
     thumbnail: "src/assets/video-pics/thumbnail-4.webp",
     avatar: "src/assets/channel-pics/channel-4.jpeg",
     title: "The Simplest Math Problem No One Can Solve - Collatz Conjecture",
@@ -36,6 +40,7 @@ export const videos = [
     duration: "22:09",
   },
   {
+    id: 5,
     thumbnail: "src/assets/video-pics/thumbnail-5.webp",
     avatar: "src/assets/channel-pics/channel-5.jpeg",
     title: "Kadane's Algorithm To Maximum Sum Subarray Problem",
@@ -45,6 +50,7 @@ export const videos = [
     duration: "11:17",
   },
   {
+    id: 6,
     thumbnail: "src/assets/video-pics/thumbnail-6.webp",
     avatar: "src/assets/channel-pics/channel-6.jpeg",
     title: "Anything You can Fit In This Circle I'll Pay For",
