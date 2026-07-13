@@ -1,6 +1,7 @@
 export const videos = [
   {
     id: 1,
+    category: "Technology",
     thumbnail: "src/assets/video-pics/thumbnail-1.webp",
     avatar: "src/assets/channel-pics/channel-1.jpeg",
     title: "Talking Tech and AI with Google CEO Sundar Pichai!",
@@ -11,6 +12,7 @@ export const videos = [
   },
   {
     id: 2,
+    category: "Entertainment",
     thumbnail: "src/assets/video-pics/thumbnail-2.webp",
     avatar: "src/assets/channel-pics/channel-2.jpeg",
     title: "Try Not To Laugh Challenge #9",
@@ -21,6 +23,7 @@ export const videos = [
   },
   {
     id: 3,
+    category: "Entertainment",
     thumbnail: "src/assets/video-pics/thumbnail-3.webp",
     avatar: "src/assets/channel-pics/channel-3.jpeg",
     title: "Crazy Tik Toks Taken Moments Before DISASTER",
@@ -31,6 +34,7 @@ export const videos = [
   },
   {
     id: 4,
+    category: "Science",
     thumbnail: "src/assets/video-pics/thumbnail-4.webp",
     avatar: "src/assets/channel-pics/channel-4.jpeg",
     title: "The Simplest Math Problem No One Can Solve - Collatz Conjecture",
@@ -41,6 +45,7 @@ export const videos = [
   },
   {
     id: 5,
+    category: "Programming",
     thumbnail: "src/assets/video-pics/thumbnail-5.webp",
     avatar: "src/assets/channel-pics/channel-5.jpeg",
     title: "Kadane's Algorithm To Maximum Sum Subarray Problem",
@@ -51,6 +56,7 @@ export const videos = [
   },
   {
     id: 6,
+    category: "Entertainment",
     thumbnail: "src/assets/video-pics/thumbnail-6.webp",
     avatar: "src/assets/channel-pics/channel-6.jpeg",
     title: "Anything You can Fit In This Circle I'll Pay For",
@@ -61,6 +67,7 @@ export const videos = [
   },
   {
     id: 7,
+    category: "Travel",
     thumbnail: "src/assets/video-pics/thumbnail-7.webp",
     avatar: "src/assets/channel-pics/channel-7.jpeg",
     title: "Why Planes Don't Fly Over Tibet",
@@ -71,6 +78,7 @@ export const videos = [
   },
   {
     id: 8,
+    category: "Luxury",
     thumbnail: "src/assets/video-pics/thumbnail-8.webp",
     avatar: "src/assets/channel-pics/channel-8.jpeg",
     title: "Inside The World's Biggest Passenger Plane",
@@ -81,6 +89,7 @@ export const videos = [
   },
   {
     id: 9,
+    category: "Fitness",
     thumbnail: "src/assets/video-pics/thumbnail-9.webp",
     avatar: "src/assets/channel-pics/channel-9.jpeg",
     title: "The SECRET to Super Human STRENGTH",
@@ -91,6 +100,7 @@ export const videos = [
   },
   {
     id: 10,
+    category: "Business",
     thumbnail: "src/assets/video-pics/thumbnail-10.webp",
     avatar: "src/assets/channel-pics/channel-10.jpeg",
     title: "How the world's Largest Cruise Ship Makes 30,000 Meals Every Day",
@@ -101,6 +111,7 @@ export const videos = [
   },
   {
     id: 11,
+    category: "Technology",
     thumbnail: "src/assets/video-pics/thumbnail-11.webp",
     avatar: "src/assets/channel-pics/channel-11.jpeg",
     title: "Dubai's Crazy Underwater Train and Other Things #Only in Dubai",
@@ -111,6 +122,7 @@ export const videos = [
   },
   {
     id: 12,
+    category: "Education",
     thumbnail: "src/assets/video-pics/thumbnail-12.webp",
     avatar: "src/assets/channel-pics/channel-12.jpeg",
     title: "What would happen if you didn't drink water?- Mia Nacamulli",

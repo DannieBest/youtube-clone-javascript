@@ -22,7 +22,7 @@ rightArrow.addEventListener('click', () => {
   });
 });
 
-function updateArrow () {
+export function updateArrow () {
   if (container.scrollLeft <= 0) {
   leftArrow.style.display = 'none';
   } else {

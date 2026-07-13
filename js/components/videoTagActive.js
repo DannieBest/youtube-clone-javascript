@@ -1,10 +1,17 @@
-const tagButtons = document.querySelectorAll(".video-tag__button");
+const videoTagContainer = document.querySelector(".video-tag__container");
 
-tagButtons.forEach((button) => {
-  button.addEventListener("click", (btn) => {
-    tagButtons.forEach((btn) => {
-      btn.classList.remove("video-tag__button--active");
-    });
-    button.classList.add("video-tag__button--active");
+videoTagContainer.addEventListener("click", (event) => {
+
+  if (!event.target.classList.contains("video-tag__button")) {
+    return;
+  }
+
+  const buttons = document.querySelectorAll(".video-tag__button");
+
+  buttons.forEach((button) => {
+    button.classList.remove("video-tag__button--active");
   });
+
+  event.target.classList.add("video-tag__button--active");
+
 });
