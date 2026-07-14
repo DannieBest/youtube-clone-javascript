@@ -1,6 +1,7 @@
 import './components/sidebar.js';
 import './components/videotag.js';
 import './components/videoTagActive.js';
+import "./components/search.js";
 import { videos } from './data/videos.js';
 import { renderVideos } from './components/renderVideos.js';
 import { renderVideoTags } from './components/renderVideoTag.js';
