@@ -18,7 +18,7 @@ export function updateVideos() {
     const author = video.author.toLowerCase();
     const search = appState.searchQuery.toLowerCase();
 
-    return title.includes(search);
+    return title.includes(search) || author.includes(search);
 
   });
 
