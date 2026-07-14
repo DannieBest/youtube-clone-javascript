@@ -2,6 +2,7 @@ import { videos } from "../data/videos.js";
 import { videoTags } from "../data/videoTag.js";
 import { renderVideos } from "./renderVideos.js";
 import { appState } from "../state/appState.js";
+import { updateVideos } from "../controllers/videoController.js";
 
 const videoTagContainer = document.querySelector(".video-tag__container");
 
@@ -23,18 +24,5 @@ videoTagContainer.addEventListener("click", (event) => {
 
   appState.selectedCategory = category;
 
-  console.log(appState);
-
-  let filteredVideos;
-
-  if (category === "All") {
-    filteredVideos = videos;
-  } else {
-    filteredVideos = videos.filter((video) => {
-      return video.category === category;
-    });
-  }
-
-  renderVideos(filteredVideos);
-
+  updateVideos();
 });
