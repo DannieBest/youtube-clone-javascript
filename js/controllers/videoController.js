@@ -13,6 +13,15 @@ export function updateVideos() {
     });
   }
 
+  filteredVideos = filteredVideos.filter((video) => {
+    const title = video.title.toLowerCase();
+    const author = video.author.toLowerCase();
+    const search = appState.searchQuery.toLowerCase();
+
+    return title.includes(search);
+
+  });
+
   renderVideos(filteredVideos);
 
 }
