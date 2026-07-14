@@ -11,9 +11,9 @@ export function renderVideoTags(videoTags) {
           class="video-tag__button ${videoTag.active ? "video-tag__button--active" : ""}
 "
 
-            data-category="${videoTag.category}" data-id="${videoTag.id}"
+            data-type="${videoTag.type}" data-id="${videoTag.id}" data-value="${videoTag.value}"
         >
-            ${videoTag.category}
+            ${videoTag.label}
         </button>
     `)
     .join("");

@@ -10,4 +10,3 @@ import { updateArrow } from './components/videotag.js';
 
 renderVideos(videos);
 renderVideoTags (videoTags);
-updateArrow();
