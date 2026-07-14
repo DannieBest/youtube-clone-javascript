@@ -4,4 +4,17 @@ numbers.sort((a, b) => {
   return b - a;
 });
 
-console.log(numbers)
+const people = [
+    { name: "Dannie" },
+    { name: "Messi" },
+    { name: "Alex" },
+    { name: "Brian" }
+];
+
+console.log(people)
+
+people.sort((a, b) => {
+  return "Dannie".localeCompare("Brian");
+});
+
+console.log(people)
