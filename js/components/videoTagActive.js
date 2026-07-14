@@ -1,6 +1,7 @@
 import { videos } from "../data/videos.js";
 import { videoTags } from "../data/videoTag.js";
 import { renderVideos } from "./renderVideos.js";
+import { appState } from "../state/appState.js";
 
 const videoTagContainer = document.querySelector(".video-tag__container");
 
@@ -19,6 +20,10 @@ videoTagContainer.addEventListener("click", (event) => {
   event.target.classList.add("video-tag__button--active");
 
   const category = event.target.dataset.category;
+
+  appState.selectedCategory = category;
+
+  console.log(appState);
 
   let filteredVideos;
 
